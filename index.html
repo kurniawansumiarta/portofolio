@@ -5,7 +5,14 @@
   <title>Kurniawan Sumiarta | Sport Photographer</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  
+  <script>
+function showCategory(category) {
+  const categories = document.querySelectorAll('.category');
+  categories.forEach(cat => cat.classList.remove('active'));
+
+  document.querySelector('.' + category).classList.add('active');
+}
+</script>
 <body>  
 <header class="header">
   <div class="logo">KURNIAWAN SUMIARTA<br><span> Sport Photographer</span></div>
