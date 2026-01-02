@@ -221,16 +221,7 @@ footer {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
-  .header {
-    flex-direction: column;
-  }
-
-  .menu {
-    margin-top: 20px;
-  }
-
-  .gallery,
-  .category {
+  .gallery {
     grid-template-columns: 1fr;
   }
 
@@ -238,7 +229,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero-content h1 {
-    font-size: 42px;
+  .header {
+    flex-direction: column;
   }
+
+  .menu {
+    margin-top: 20px;
+  }
+}
+
 }
