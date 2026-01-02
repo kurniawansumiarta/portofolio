@@ -239,6 +239,50 @@ footer {
   letter-spacing: 3px;
 }
 
-  
+  /* DROPDOWN MENU */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  z-index: 99;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 80px;
+}
+
+.category {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category.active {
+  display: grid;
+}
+
+.category img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
 
 }
