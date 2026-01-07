@@ -311,5 +311,66 @@ footer {
   letter-spacing: 3px;
   font-size: 14px;
 }
+/* === PORTFOLIO LAYOUT === */
+.portfolio-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 80px 60px;
+}
+
+/* MENU SAMPING */
+.portfolio-menu {
+  position: sticky;
+  top: 120px; /* jarak dari header */
+  width: 220px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  height: fit-content;
+}
+
+/* JUDUL */
+.portfolio-menu h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* BUTTON MENU */
+.portfolio-menu button {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-menu button:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+/* ISI GALERI */
+.portfolio-content {
+  flex: 1;
+}
+
+/* CATEGORY */
+.category {
+  display: none;
+}
+
+.category.active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
 
 }
